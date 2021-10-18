@@ -1,0 +1,26 @@
+{
+   "name": "family-organizer-app",
+   "version": "1.0.0",
+   "description": "Organizer for couples",
+   "main": "app.js",
+   "engines": {
+      "node": "14.17.x"
+   },
+   "scripts": {
+      "start": "nodemon app.js",
+      "test": "node test.js"
+   },
+   "author": "Braden Hansen",
+   "license": "ISC",
+   "devDependencies": {
+      "nodemon": "^2.0.13"
+   },
+   "dependencies": {
+      
+   },
+   "keywords": [
+      "node",
+      "heroku",
+      "express"
+   ]
+}
