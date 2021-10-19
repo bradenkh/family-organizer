@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const Server = require("http");
 
@@ -10,13 +11,14 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 //routes
+const homeRoutes = require("./routes/home");
 const timeRoutes = require("./routes/time");
-const errorController = require("./controllers/error");
-const exp = require("constants");
 
 //use routes
-// app.use(express.static(path.join(__dirname, "public")));
-app.use(timeRoutes);
+app.use(homeRoutes).use(timeRoutes);
+
+// 404 Handling
+const errorController = require("./controllers/error");
 app.use(errorController.get404);
 
 app.listen(PORT);
