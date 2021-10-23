@@ -13,9 +13,10 @@ app.set("views", "views");
 //routes
 const homeRoutes = require("./routes/home");
 const timeRoutes = require("./routes/time");
+const moneyRoutes = require("./routes/money");
 
 //use routes
-app.use(homeRoutes).use(timeRoutes);
+app.use(homeRoutes).use(timeRoutes).use(moneyRoutes);
 
 // 404 Handling
 const errorController = require("./controllers/error");

@@ -1,7 +1,7 @@
 exports.getTimeHome = (req, res, next) => {
    res.render("time/home", {
       pageTitle: "Time Management",
-      path: "time/home",
+      path: "time",
    });
 };
 
